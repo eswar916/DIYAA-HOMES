@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <script src="https://kit.fontawesome.com/e1f20f2118.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="images/logo1.png">
+        <link rel="stylesheet" href="style/sty.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+        
+            <div>
+                <h1><%= data[0] %></h1>
+            </div>
+            <div>
+                <a class="nav-link " href="#contact">Enquiry Now</a>
+            </div>
+            
+        </header>
+        <div class="main">
+            <main>
+                <section class="hero-section" id = "hero">
+                    <div class="image-container">
+                        <div><img src='<%= data[3] %>' alt="" /></div>
+                        <div><img src='<%= data[4] %>'  alt="" /></div>
+                    </div>
+                    <div class="image-container">
+                        <div><img src='<%= data[5] %>'  alt="" /></div>
+                        <div><img src='<%= data[6] %>'  alt="" /></div>
+                    </div>
+                </section>
+                <section class="project-overview" id="overview">
+                    <h2 class="section-title">Project Overview</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="icon">🏞️</span>
+                            <span class="label">Project Area</span>
+                            <p>3.55 Acres</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📏</span>
+                            <span class="label">Sizes</span>
+                            <p><%= data[1] %> sq.ft.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🏠</span>
+                            <span class="label">Project Size</span>
+                            <p>3075 units</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📅</span>
+                            <span class="label">Launch Date</span>
+                            <p>June, 2018</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">💰</span>
+                            <span class="label">Avg. Price</span>
+                            <p>Price on request</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🏠</span>
+                            <span class="label">Possession Starts</span>
+                            <p>Ready to Move</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🏛️</span>
+                            <span class="label">Configuration</span>
+                            <p><%= data[2] %></p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔍</span>
+                            <span class="label">Rera Id</span>
+                            <p>P061601070616</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="highlights-container" id="highlights">
+                    <h2 class="section-title">Why Choose <%= data[0] %>?</h2>
+                    <div class="highlights-content">
+                        <ul class="highlight-list">
+                            <li>Blend elegant, minimalist aesthetics with accessible design inspirations for stylish, functional spaces.</li>
+                            <li>Smart spatial strategies, like courtyards on narrow lots, maximize square footage while offering private outdoor relaxation.</li>
+                            <li>Expansive floor-to-ceiling windows, flat roofs, and open floor plans merge modern style with luxurious, vast interiors.</li>
+                            <li>Premium finishes and durable materials reduce maintenance costs, freeing budgets for tech or custom furnishings.</li>
+                        </ul>
+                        <button class="view-more">View More Highlights ▼</button>
+                        <div class="more-highlights" style="display: none;">
+                            <ul class="highlight-list">
+                                <li>High-end features like smart systems and private courtyards elevate convenience and quality of life.</li>
+                                <li>Trained personnel, CCTV, and secluded designs ensure safety and serenity, even in bustling urban areas.</li>
+                                <li>Confer pride and status while appreciating in value as desirable, high-performing assets.</li>
+                                <li>Combining cutting-edge design and opulence, they are ideal for an elevated standard of living.</li>
+                            </ul>
+                        </div>
+                        <button class="view-less" style="display: none;">View Less Highlights ▲</button>
+                    </div>
+                </section>
+
+                <section class="amenities-container" id="amenities">
+                    <h2 class="section-title">Project Amenities</h2>
+                    <div class="amenities-grid">
+                        <div class="amenity-item">
+                            <img src="images/watertap.png" alt="24/7 Water Supply" class="amenity-icon">
+                            <p>24/7 Water Supply</p>
+                        </div>
+                        <div class="amenity-item">
+                            <img src="images/solid.png" alt="Solid Waste Management" class="amenity-icon">
+                            <p>Solid Waste Management</p>
+                        </div>
+                        <div class="amenity-item">
+                            <img src="images/strom.png" alt="Storm Water Drains" class="amenity-icon">
+                            <p>Storm Water Drains</p>
+                        </div>
+                        <div class="amenity-item">
+                            <img src="images/roads.png" alt="Internal Roads & Footpaths" class="amenity-icon">
+                            <p>Internal Roads & Footpaths</p>
+                        </div>
+                        <div class="amenity-item">
+                            <img src="images/electri.png" alt="Energy management" class="amenity-icon">
+                            <p>Energy Management</p>
+                        </div>
+                        <div class="amenity-item">
+                            <img src="images/st.png" alt="Sewage Treatment" class="amenity-icon">
+                            <p>Sewage Treatment</p>
+                        </div>
+                        <div class="amenity-item">
+                            <img src="images/fire.png" alt="Fire Fighting System" class="amenity-icon">
+                            <p>Fire Fighting System</p>
+                        </div>
+                        <div class="amenity-item">
+                            <img src="images/trans.png" alt="Electrification" class="amenity-icon">
+                            <p>Electrification (Transformer, Solar)</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="contact">
+                <div class="footer-content">
+                    <div class="contact-info">
+                        <h1>DIYAA HOMES</h1>
+                        <div class="address">
+                            <h2>Address</h2>
+                            <p>DIYAA HOMES<br>MDR83, Vaddi Palem,<br>Kavali, Andhra Pradesh 524201</p>
+                        </div>
+                        <div class="social">
+                            <h2>Follow us on</h2>
+                            <div class="social-links">
+                                <a href="#"  id = "sl-color" aria-label="Facebook"><i class="fab fa-facebook-f  "></i></a>
+                                <a href="#"  id = "sl-color" aria-label="Instagram"><i class="fab fa-instagram  "></i></a>
+                                <a href="#"  id = "sl-color" aria-label="YouTube"><i class="fab fa-youtube      "></i></a>
+                                <a href="#"  id = "sl-color" aria-label="LinkedIn"><i class="fab fa-linkedin-in "></i></a>
+                            </div>
+                        </div>
+                        <div class="enquiry">
+                            <h2>Sales Enquiry</h2>
+                            <p>+91 9876543210 | +91 9876541230<br>diyahomes@gmail.com</p>
+                        </div>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15340.45226528078!2d79.98652396968791!3d14.926985154711682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4b7bb9db1d766b%3A0xbcf9301b9944c9e1!2sDIYAA%20HOMES!5e0!3m2!1sen!2sin!4v1708501234567!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Contact Us</h2>
+                        <form id="contactForm">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            
+                            <label for="phone">Phone</label>
+                            <div class="phone-input">
+                                <select id="country-code" name="countryCode">
+                                    <option value="+91">+91 🇮🇳</option>
+                                    <option value="+1">+1 🇺🇸</option>
+                                    <option value="+44">+44 🇬🇧</option>
+                                    <option value="+971">+971 🇦🇪</option>
+                                </select>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                            </div>
+                            
+                            <label for="project">Project Interest</label>
+                            <select id="project" name="project" required>
+                                <option value="" disabled selected>Select your interest</option>
+                                <option value="Modern Homes">Modern Homes</option>
+                                <option value="Luxury Homes">Luxury Homes</option>
+                                <option value="Renovations">Renovations</option>
+                                <option value="Empty Plots">Empty Plots</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="7" placeholder="Your Message" required></textarea>
+                            
+                            <button type="submit" id="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="/js/script1.js"></script>
+    </body>
+</html>
